@@ -1,0 +1,17 @@
+
+Step 1: Configure the php.ini file in C:\xampp\php\php.ini
+
+ - Find [mail function] and change
+  sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+ extension=php_openssl.dll
+
+Step 2: Configure the sendmail.ini file in 
+ C:\xampp\sendmail\sendmail.ini
+ - Find [sendmail] and change  
+ smtp_server=relay.rbcint.com
+ smtp_port=587
+ smtp_ssl=auto
+ auth_username =RepublicBankMortgageCenter@republicbank.com
+ auth_password = your-password
+ force_sender  = RepublicBankMortgageCenter@republicbank.com
+
